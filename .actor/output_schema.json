@@ -1,0 +1,17 @@
+{
+  "actorOutputSchemaVersion": 1,
+  "title": "GitHub & Open-Source Bounty Radar Output",
+  "description": "Ranked list of live, low-competition paid open-source bounties across GitHub.",
+  "properties": {
+    "bounties": {
+      "type": "string",
+      "title": "Bounties Overview",
+      "template": "{{links.apiDefaultDatasetUrl}}/items?view=overview"
+    },
+    "rawDataset": {
+      "type": "string",
+      "title": "Full JSON Dataset",
+      "template": "{{links.apiDefaultDatasetUrl}}/items"
+    }
+  }
+}
