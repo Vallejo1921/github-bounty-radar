@@ -1,0 +1,57 @@
+{
+  "title": "GitHub & Open-Source Bounty Radar Input",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "keywords": {
+      "title": "Search Keywords / Signals",
+      "type": "array",
+      "description": "Keywords or bounty platform markers to search in open GitHub issues.",
+      "editor": "stringList",
+      "default": ["bounty", "algora", "opire"],
+      "prefill": ["bounty", "algora", "opire"]
+    },
+    "languages": {
+      "title": "Filter by Tech Stack / Language (optional)",
+      "type": "array",
+      "description": "Optional language or keyword filters (e.g., typescript, python, rust, solidity, go). Leave empty for all.",
+      "editor": "stringList",
+      "default": []
+    },
+    "minRewardUsd": {
+      "title": "Minimum Estimated Reward (USD)",
+      "type": "integer",
+      "description": "Only keep issues with an extracted reward >= this USD amount (set 0 to include unpriced bounties).",
+      "default": 50,
+      "minimum": 0
+    },
+    "maxComments": {
+      "title": "Maximum Comments (Anti-Saturation Filter)",
+      "type": "integer",
+      "description": "Skip crowded issues with more comments than this threshold.",
+      "default": 15,
+      "minimum": 0
+    },
+    "onlyUnassigned": {
+      "title": "Only Unassigned Issues",
+      "type": "boolean",
+      "description": "Exclude issues that already have an assignee.",
+      "default": true
+    },
+    "maxResults": {
+      "title": "Max Results",
+      "type": "integer",
+      "description": "Maximum number of ranked bounties to output.",
+      "default": 50,
+      "minimum": 1,
+      "maximum": 300
+    },
+    "githubToken": {
+      "title": "GitHub Personal Access Token (optional)",
+      "type": "string",
+      "description": "Optional token for higher GitHub API rate limits (30 req/min vs 10 req/min unauthenticated).",
+      "editor": "textfield",
+      "isSecret": true
+    }
+  }
+}

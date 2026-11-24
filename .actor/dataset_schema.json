@@ -1,0 +1,36 @@
+{
+  "actorSpecification": 1,
+  "fields": {},
+  "views": {
+    "overview": {
+      "title": "Bounties Overview",
+      "transformation": {
+        "fields": [
+          "rewardUsd",
+          "rewardRaw",
+          "competitionLevel",
+          "repo",
+          "title",
+          "commentsCount",
+          "platformSignal",
+          "url",
+          "updatedAt"
+        ]
+      },
+      "display": {
+        "component": "table",
+        "properties": {
+          "rewardUsd": { "label": "Est. USD", "format": "number" },
+          "rewardRaw": { "label": "Reward", "format": "text" },
+          "competitionLevel": { "label": "Competition", "format": "text" },
+          "repo": { "label": "Repository", "format": "text" },
+          "title": { "label": "Issue Title", "format": "text" },
+          "commentsCount": { "label": "Comments", "format": "number" },
+          "platformSignal": { "label": "Platform", "format": "text" },
+          "url": { "label": "URL", "format": "link" },
+          "updatedAt": { "label": "Updated", "format": "date" }
+        }
+      }
+    }
+  }
+}

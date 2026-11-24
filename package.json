@@ -1,0 +1,13 @@
+{
+  "name": "github-bounty-radar",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Apify Actor that discovers and ranks live, low-competition paid GitHub & Open-Source bounties (Algora, Opire, IssueHunt, Web3).",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node src/main.js"
+  },
+  "dependencies": {
+    "apify": "^3.2.6"
+  }
+}

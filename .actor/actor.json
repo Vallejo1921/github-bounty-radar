@@ -1,0 +1,15 @@
+{
+  "actorSpecification": 1,
+  "name": "github-bounty-radar",
+  "title": "GitHub & Open-Source Bounty Radar (USD / USDC / Algora / Opire)",
+  "description": "Discover live, low-competition paid open-source bounties across GitHub (Algora, Opire, IssueHunt, Web3). Extracts normalized USD/crypto rewards, competition scores, tech stack, and assignee status in clean JSON/CSV for developers and AI coding agents.",
+  "version": "1.0",
+  "meta": {
+    "templateId": "js-empty"
+  },
+  "input": "./input_schema.json",
+  "dockerfile": "../Dockerfile",
+  "storages": {
+    "dataset": "./dataset_schema.json"
+  }
+}
